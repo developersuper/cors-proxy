@@ -10,7 +10,7 @@ module.exports = {
         headers,
         data
       })
-      return results.status
+      return results.data
     }catch(err) {
       throw err
     }

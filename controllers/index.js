@@ -12,8 +12,7 @@ module.exports = {
     const headers = req.body.headers || {}
     try{
       let results = await http.work(url, method, params, data, headers)
-      console.log('here', results)
-      res.json(results)
+      return res.json(results)
     }catch(err){
       next(err)
     }
